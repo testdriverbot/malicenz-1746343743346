@@ -1,0 +1,11 @@
+version: 4.2.29
+session: 68171c2d1c54b9d176f282ab
+steps:
+  - prompt: Click on the "Discord" link in the connection section.
+    commands:
+      - command: focus-application
+        name: Google Chrome
+      - command: hover-text
+        text: Discord
+        description: Discord link in the connections section
+        action: click
