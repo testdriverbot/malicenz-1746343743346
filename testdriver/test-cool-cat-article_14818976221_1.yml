@@ -1,0 +1,19 @@
+version: 4.2.29
+session: 68171c2cf9049b0dd76183c8
+steps:
+  - prompt: Click on "Cool Cat"
+    commands:
+      - command: hover-text
+        text: Cool Cat
+        description: section with the cat icon and text "Cool Cat"
+        action: click
+  - prompt: Assert that the article page loads successfully.
+    commands:
+      - command: assert
+        expect: the "Cool Cat" title and image are visible
+  - prompt: Assert that the article content displays correctly without errors.
+    commands:
+      - command: assert
+        expect: >-
+          the "Cool Cat" title, image, and date "2025" are visible without
+          errors
