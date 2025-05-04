@@ -1,0 +1,57 @@
+version: 4.2.29
+session: 68171c2d1c54b9d176f282a9
+steps:
+  - prompt: Click on each navigation link.
+    commands:
+      - command: focus-application
+        name: Google Chrome
+      - command: hover-text
+        text: Discord Loading
+        description: Discord link in the sidebar
+        action: click
+      - command: hover-text
+        text: Steam Loading
+        description: Steam link in the sidebar
+        action: click
+      - command: hover-text
+        text: Spotify Loading
+        description: Spotify link in the sidebar
+        action: click
+      - command: hover-text
+        text: Discord
+        description: Discord link under Connections
+        action: click
+      - command: hover-text
+        text: Roblox
+        description: Roblox link under Connections
+        action: click
+      - command: hover-text
+        text: GitHub
+        description: GitHub link under Connections
+        action: click
+      - command: hover-text
+        text: Steam
+        description: Steam link under Connections
+        action: click
+      - command: hover-text
+        text: rbxl.download
+        description: rbxl.download website link
+        action: click
+      - command: hover-text
+        text: Hi im malice (it means evil)
+        description: api.malice.nz tab title
+        action: click
+      - command: hover-text
+        text: pupuna.straw.page
+        description: pupuna.straw.page website link
+        action: click
+      - command: hover-text
+        text: Hi im malice (it means evil)
+        description: First tab title
+        action: click
+      - command: assert
+        expect: The page content matches 'Hi im malice (it means evil)'
+      - command: hover-text
+        text: Hi im malice (it means evil)
+        description: First tab title
+        action: click
