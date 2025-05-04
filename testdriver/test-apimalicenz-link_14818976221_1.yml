@@ -1,0 +1,19 @@
+version: 4.2.29
+session: 68171c2ef9049b0dd76183ce
+steps:
+  - prompt: Click on "api.malice.nz" in the websites section.
+    commands:
+      - command: focus-application
+        name: Google Chrome
+      - command: hover-text
+        text: api.malice.nz
+        description: website link in the websites section
+        action: click
+  - prompt: Assert that it redirects to the correct URL.
+    commands:
+      - command: assert
+        expect: the URL is api.malice.nz
+  - prompt: Assert no errors occur during redirection.
+    commands:
+      - command: assert
+        expect: no error messages are visible on the page
