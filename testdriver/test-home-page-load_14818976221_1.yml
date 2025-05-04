@@ -1,0 +1,13 @@
+version: 4.2.29
+session: 68171c2df9049b0dd76183ca
+steps:
+  - prompt: Focus the browser window.
+    commands: []
+  - prompt: Assert that the homepage loads successfully.
+    commands:
+      - command: assert
+        expect: the homepage with "Hi, im malice!" is visible
+  - prompt: Assert there are no visual errors on the page.
+    commands:
+      - command: assert
+        expect: the webpage displays correctly without visual errors
