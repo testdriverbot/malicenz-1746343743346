@@ -1,0 +1,17 @@
+version: 4.2.29
+session: 68171c2c1c54b9d176f282a7
+steps:
+  - prompt: Click on "rbxl.download" in the websites section.
+    commands:
+      - command: hover-text
+        text: rbxl.download
+        description: link in the websites section on the left sidebar
+        action: click
+  - prompt: Assert that it redirects to the correct URL.
+    commands:
+      - command: assert
+        expect: the URL in the address bar is "rbxl.download"
+  - prompt: Assert no errors occur during redirection.
+    commands:
+      - command: assert
+        expect: no error messages are visible on the page
